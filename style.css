@@ -1,0 +1,157 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar button {
+  padding: 10px 40px;
+  color: hsl(322, 100%, 66%);
+  background-color: transparent;
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 20px;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.one h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.one_p {
+  width: 400px;
+  text-align: center;
+  font-weight: normal;
+  color: gray;
+}
+.one button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.mockups {
+  width: 700px;
+}
+.specials {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+.specials img {
+  width: 20px;
+  height: 20px;
+}
+.specials h2 {
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.specials p {
+  color: gray;
+  margin-top: 0;
+}
+.inside {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.flex {
+  flex: 1;
+}
+.two p {
+  width: 410px;
+}
+.two img {
+  width: 500px;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.three button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-weight: 700;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer_text {
+  width: 300px;
+}
+.texts {
+  display: flex;
+  align-items: center;
+}
+.texts img {
+  margin-right: 10px;
+}
+.newsletter p {
+  width: 300px;
+}
+.newsletter input {
+  padding: 10px 40px;
+}
+.newsletter button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .one h1 {
+    text-align: center;
+    width: 280px;
+  }
+  .one_p {
+    width: 280px;
+  }
+  .mockups {
+    width: 100%;
+  }
+  .specials {
+    flex-direction: column;
+  }
+  .two img {
+    width: 100%;
+  }
+  .inside {
+    flex-direction: column-reverse;
+  }
+  .inside + .inside {
+    margin-top: 50px;
+  }
+  .reverse {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  .newsletter {
+    margin-bottom: 50px;
+  }
+}
